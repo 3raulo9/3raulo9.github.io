@@ -1,6 +1,8 @@
 
 body{
     background-image: linear-gradient(rgb(255, 157, 191), rgb(255, 255, 255));
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 
@@ -25,14 +27,21 @@ body{
     display: table;
   }
   
-  .glow {
-    font-size: 80px;
-    color: #fff;
-    text-align: center;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
-  }
+
+  @keyframes slidein{
+    from{
+        margin-top: 100%;
+        width: 100;
+        
+    }
+
+    to {margin-top: 0%;
+    width: 100%;
+
+    }
+
+}
+
   h1 {
       animation-duration: 3s;
       animation-name: slidein;
@@ -46,15 +55,3 @@ body{
     }
 
   
-      @keyframes slidein{
-      from{
-          margin-top: 100%;
-          width: 300;
-      }
-  
-      to {margin-top: 0%;
-      width: 100%;
-  
-      }
-  
-  }
