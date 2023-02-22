@@ -1,4 +1,14 @@
-* {
+
+body{
+    background-image: linear-gradient(rgb(255, 157, 191), rgb(255, 255, 255));
+}
+
+
+@font-face {
+    font-family: triksterfont;
+    src: url(triksterfont.woff);
+}
+*  {
     box-sizing: border-box;
   }
   
@@ -14,11 +24,27 @@
     clear: both;
     display: table;
   }
+  
+  .glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
   h1 {
       animation-duration: 3s;
       animation-name: slidein;
-  
-  }
+
+      font: 25px triksterfont;
+      font-size: 4vw;
+      text-decoration: underline; 
+      text-align: center
+
+
+    }
+
   
       @keyframes slidein{
       from{
