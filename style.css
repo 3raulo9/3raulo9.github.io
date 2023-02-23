@@ -5,7 +5,9 @@
 h1{
     font-family: "Righteous"
 }
-
+h4{
+  font-family: "Righteous"
+}
 *  {
     box-sizing: border-box;
   }
