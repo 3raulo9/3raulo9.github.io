@@ -6,10 +6,10 @@ body{
 }
 
 
-@font-face {
-    font-family: triksterfont;
-    src: url(triksterfont.woff);
+h1{
+    font-family: "Righteous"
 }
+
 *  {
     box-sizing: border-box;
   }
@@ -31,8 +31,7 @@ body{
   @keyframes slidein{
     from{
         margin-top: 100%;
-        width: 100;
-        
+        width: 300;
     }
 
     to {margin-top: 0%;
@@ -42,16 +41,15 @@ body{
 
 }
 
-  h1 {
+  body {
       animation-duration: 3s;
       animation-name: slidein;
 
-      font: 25px triksterfont;
-      font-size: 4vw;
+      font: 21px triksterfont;
+      font-size: 2vw;
       text-decoration: underline; 
       text-align: center
 
 
     }
 
-  
