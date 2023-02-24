@@ -64,14 +64,24 @@ h4{
 head{
   animation-duration: 3s;
   animation-name: slidein;
+  
 }
-
-
+.characters {
+	display: table;
+	width: 100%;
+}
+.small {
+  zoom: 75%;
+}
+.cell {
+	display: table-cell;
+}
 @import url(https://fonts.googleapis.com/css?family=Exo:100);
 @-webkit-keyframes bg-scrolling-reverse {
   100% {
     background-position: 50px 50px;
   }
+
 }
 @-moz-keyframes bg-scrolling-reverse {
   100% {
