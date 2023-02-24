@@ -16,6 +16,15 @@ h4{
   animation-name: slidein;
 }
 
+a:link{
+  color:blueviolet;
+}
+a:hover{
+  color:pink;
+}
+a:active{
+  color:purple;
+}
 
   
   .column {
@@ -44,21 +53,28 @@ h4{
     }
 
 }
-.sanaimg{
-  float: center;
+.characters{
 
-  padding: 5px;
+  position: center;
+}
+.sanaimg{
+
+
+  padding: 4px;
+  position: center;
+  right: 800px
 }
 .gasterimg{
-  float: center;
-
-  padding: 5px;
+  position: center;
+  right: 650px
 
 }
 .scarabassimg{
-  float: center;
 
-  padding: 5px;
+  position: center;
+  padding: 4px;
+  right: 500px
+
   
 }
 head{
@@ -66,10 +82,7 @@ head{
   animation-name: slidein;
   
 }
-.characters {
-	display: table;
-	width: 100%;
-}
+
 .small {
   zoom: 75%;
 }
@@ -121,10 +134,9 @@ head{
 /* Main styles */
 body{
 
-    background-image: linear-gradient(rgb(255, 157, 191), rgb(255, 255, 255));
 
   /* img size is 50x50 */
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+  background-image: url("images_de_site\dotsbg.png") repeat 0 0;
   -webkit-animation: bg-scrolling-reverse 0.92s infinite;
   /* Safari 4+ */
   -moz-animation: bg-scrolling-reverse 0.92s infinite;
