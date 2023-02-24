@@ -136,7 +136,8 @@ body{
 
 
   /* img size is 50x50 */
-  background-image: url("images_de_site\dotsbg.png") repeat 0 0;
+  background: url("https://3raulo9.github.io/images_de_site/dotsbg.png") repeat 0 0;
+  width: 3500;
   -webkit-animation: bg-scrolling-reverse 0.92s infinite;
   /* Safari 4+ */
   -moz-animation: bg-scrolling-reverse 0.92s infinite;
