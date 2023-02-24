@@ -1,19 +1,25 @@
 
-
+*  {
+  box-sizing: border-box;
+}
 
 
 h1{
-    font-family: "Righteous"
+    font-family: "Righteous";
+    animation-duration: 3s;
+    animation-name: slidein
+
 }
 h4{
-  font-family: "Righteous"
+  font-family: "Righteous";
+  animation-duration: 3s;
+  animation-name: slidein;
 }
-*  {
-    box-sizing: border-box;
-  }
+
+
   
   .column {
-    float: left;
+    float: center;
     width: 33.33%;
     padding: 5px;
   }
@@ -32,28 +38,35 @@ h4{
         width: 300;
     }
 
-    to {margin-top: 0%;
+    to {margin-top: 2.7%;
     width: 100%;
 
     }
 
 }
 .sanaimg{
-  float: right;
+  float: center;
 
   padding: 5px;
 }
 .gasterimg{
-  float: right;
+  float: center;
 
   padding: 5px;
 
 }
 .scarabassimg{
-  float: right;
+  float: center;
 
   padding: 5px;
+  
 }
+head{
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+
 @import url(https://fonts.googleapis.com/css?family=Exo:100);
 @-webkit-keyframes bg-scrolling-reverse {
   100% {
@@ -117,13 +130,9 @@ body{
   font: 21px triksterfont;
   font-size: 2vw;
   text-decoration: underline; 
-  text-align: left
+  text-align: center;
+  position: relative; top:-40px;
   
-
   }
-  div{
 
-    animation-duration: 3s;
-    animation-name: slidein;
-  }
 
