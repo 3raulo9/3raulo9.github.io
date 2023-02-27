@@ -1,178 +1,80 @@
-
-*  {
+@import url("https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap");
+*,
+*:before,
+*:after {
   box-sizing: border-box;
-  object-fit: cover;
-  
+  position: relative;
+  letter-spacing: 0.04em;
 }
-
-
-h1{
-    font-family: "Righteous";
-
-    animation: 3s slidein;
-
-
-
+body {
+  font-family: "Righteous", "Signika Negative", sans-serif;
+  font-weight: 300;
 }
-h4{
-  font-family: "Righteous";
-  animation-name: slidein;
-  animation-duration: 3s;
-}
-a{
-  animation: 3s linear 0s infinite running opacityThingy;
-}
-
-a:link{
-  color:blueviolet;
-}
-a:hover{
-  color:pink;
-}
-a:active{
-  color:purple;
-}
-
-
-body{
-
-  background-image: linear-gradient(rgb(255, 157, 191), rgb(255, 255, 255));
-
-/* img size is 50x50 */
-background: url("https://3raulo9.github.io/images_de_site/dotsbg2.png") repeat 0 0;
--webkit-animation: bg-scrolling-reverse 0.92s infinite;
-/* Safari 4+ */
--moz-animation: bg-scrolling-reverse 0.92s infinite;
-/* Fx 5+ */
--o-animation: bg-scrolling-reverse 0.92s infinite;
-/* Opera 12+ */
-animation: bg-scrolling-reverse 0.92s infinite;
-/* IE 10+ */
--webkit-animation-timing-function: linear;
--moz-animation-timing-function: linear;
--o-animation-timing-function: linear;
-animation-timing-function: linear;
-font: 21px triksterfont;
-font-size: 2vw;
-text-decoration: underline; 
-text-align: center;
-position: relative; top:-40px;
-}
-  
-  .column {
-    float: center;
-    width: 33.33%;
-    padding: 5px;
-  }
-  
-  /* Clearfix (clear floats) */
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-.characters{
-
-  position: center;
-}
-
-
-.sanaimg{
-
-
-  padding: 4px;
-  position: center;
-  right: 800px;
-  transform: translateX(130px);
-
-}
-.gasterimg{
-  position: center;
-  right: 650px;
-  transform: translateX(-280px);
-}
-.scarabassimg{
-
-  position: center;
-  padding: 4px;
-  right: 500px;
-  transform: translatex(170px);
-
-  
-}
-head{
-  animation-duration: 3s;
-  animation-name: slidein;
-  
-}
-
-.small {
-  zoom: 75%;
-}
-.cell {
-	display: table-cell;
-}
-
-
-
-@import url(https://fonts.googleapis.com/css?family=Exo:100);
-@-webkit-keyframes bg-scrolling-reverse {
-  100% {
-    background-position: 50px 50px;
-  }
-
-}
-@-moz-keyframes bg-scrolling-reverse {
-  100% {
-    background-position: 50px 50px;
-  }
-}
-@-o-keyframes bg-scrolling-reverse {
-  100% {
-    background-position: 50px 50px;
-  }
-}
-@keyframes bg-scrolling-reverse {
-  100% {
-    background-position: 50px 50px;
-  }
-}
-@-webkit-keyframes bg-scrolling {
-  0% {
-    background-position: 50px 50px;
-  }
-}
-@-moz-keyframes bg-scrolling {
-  0% {
-    background-position: 50px 50px;
-  }
-}
-@-o-keyframes bg-scrolling {
-  0% {
-    background-position: 50px 50px;
-  }
-}
-@keyframes bg-scrolling {
-  0% {
-    background-position: 50px 50px;
-  }
-}
-
-@keyframes slidein{
-  from{
-      margin-top: 90%;
-      width: 300;
-  }
-
-  to {margin-top: 2.7%;
+.section {
+  height: 100vh;
   width: 100%;
-
-  }
-
+  position: relative;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg1 {
+  background-color: #ffb2f7;
+}
+.bg2 {
+  background-color: rgb(0, 153, 0);
+}
+h1 {
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 0;
+  position: absolute
 }
 
-@keyframes opacityThingy{
-  50%{opacity:0;}
-  
+a{
+  font-size: 40px;
 }
+.five-pointed-star {
+  --star-color:rgb(255, 255, 255);
+  margin:1em auto;
+  font-size:10em;
+  position: relative;
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-right: 1em solid transparent;
+  border-bottom: 0.7em solid var(--star-color);
+  border-left: 1em solid transparent;
+  transform: rotate(35deg);
+ }
+ .five-pointed-star:before {
+  border-bottom: 0.8em solid var(--star-color);
+  border-left: 0.3em solid transparent;
+  border-right: 0.3em solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -0.45em;
+  left: -0.65em;
+  display: block;
+  content:"";
+  transform: rotate(-35deg);
+ }
+ .five-pointed-star:after {
+  position: relative;
+  display: block;
+  top: 0.03em;
+  left: -1.05em;
+  width: 0;
+  height: 0;
+  border-right: 1em solid transparent;
+  border-bottom: 0.7em solid var(--star-color);
+  border-left: 1em solid transparent;
+  transform: rotate(-70deg);
+  content:"";
+ }
+
+

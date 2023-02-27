@@ -1,0 +1,178 @@
+
+*  {
+  box-sizing: border-box;
+  object-fit: cover;
+  
+}
+
+
+h1{
+    font-family: "Righteous";
+
+    animation: 3s slidein;
+
+
+
+}
+h4{
+  font-family: "Righteous";
+  animation-name: slidein;
+  animation-duration: 3s;
+}
+a{
+  animation: 3s linear 0s infinite running opacityThingy;
+}
+
+a:link{
+  color:blueviolet;
+}
+a:hover{
+  color:pink;
+}
+a:active{
+  color:purple;
+}
+
+
+body{
+
+  background-image: linear-gradient(rgb(255, 157, 191), rgb(255, 255, 255));
+
+/* img size is 50x50 */
+background: url("https://3raulo9.github.io/images_de_site/dotsbg2.png") repeat 0 0;
+-webkit-animation: bg-scrolling-reverse 0.92s infinite;
+/* Safari 4+ */
+-moz-animation: bg-scrolling-reverse 0.92s infinite;
+/* Fx 5+ */
+-o-animation: bg-scrolling-reverse 0.92s infinite;
+/* Opera 12+ */
+animation: bg-scrolling-reverse 0.92s infinite;
+/* IE 10+ */
+-webkit-animation-timing-function: linear;
+-moz-animation-timing-function: linear;
+-o-animation-timing-function: linear;
+animation-timing-function: linear;
+font: 21px triksterfont;
+font-size: 2vw;
+text-decoration: underline; 
+text-align: center;
+position: relative; top:-40px;
+}
+  
+  .column {
+    float: center;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+.characters{
+
+  position: center;
+}
+
+
+.sanaimg{
+
+
+  padding: 4px;
+  position: center;
+  right: 800px;
+  transform: translateX(130px);
+
+}
+.gasterimg{
+  position: center;
+  right: 650px;
+  transform: translateX(-280px);
+}
+.scarabassimg{
+
+  position: center;
+  padding: 4px;
+  right: 500px;
+  transform: translatex(170px);
+
+  
+}
+head{
+  animation-duration: 3s;
+  animation-name: slidein;
+  
+}
+
+.small {
+  zoom: 75%;
+}
+.cell {
+	display: table-cell;
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+
+@keyframes slidein{
+  from{
+      margin-top: 90%;
+      width: 300;
+  }
+
+  to {margin-top: 2.7%;
+  width: 100%;
+
+  }
+
+}
+
+@keyframes opacityThingy{
+  50%{opacity:0;}
+  
+}
