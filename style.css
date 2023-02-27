@@ -1,6 +1,8 @@
 
 *  {
   box-sizing: border-box;
+  object-fit: cover;
+  
 }
 
 
@@ -31,6 +33,7 @@ a:active{
   color:purple;
 }
 
+
 body{
 
   background-image: linear-gradient(rgb(255, 157, 191), rgb(255, 255, 255));
@@ -54,7 +57,6 @@ font-size: 2vw;
 text-decoration: underline; 
 text-align: center;
 position: relative; top:-40px;
-
 }
   
   .column {
@@ -159,7 +161,7 @@ head{
 
 @keyframes slidein{
   from{
-      margin-top: 100%;
+      margin-top: 90%;
       width: 300;
   }
 
