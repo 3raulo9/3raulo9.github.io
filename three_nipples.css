@@ -75,6 +75,7 @@ position: relative; top:-40px;
 .characters{
 
   position: center;
+
 }
 
 
@@ -85,12 +86,18 @@ position: relative; top:-40px;
   position: center;
   right: 800px;
   transform: translateX(130px);
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-delay: 6s;
 
 }
 .gasterimg{
   position: center;
   right: 650px;
   transform: translateX(-280px);
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-delay: 6s;
 }
 .scarabassimg{
 
@@ -98,13 +105,14 @@ position: relative; top:-40px;
   padding: 4px;
   right: 500px;
   transform: translatex(170px);
-
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-delay: 6s;
   
 }
 head{
   animation-duration: 3s;
   animation-name: slidein;
-  
 }
 
 .small {
@@ -169,6 +177,14 @@ head{
   width: 100%;
 
   }
+  20% {
+		opacity: 0;
+	}
+
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(-50%);
 
 }
 
