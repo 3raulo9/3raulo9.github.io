@@ -1,4 +1,3 @@
-
 *  {
   box-sizing: border-box;
   object-fit: cover;
@@ -174,11 +173,9 @@ head{
 	}
 
 	}
-	100% {
-		opacity: 1;
-		transform: translateX(-50%);
 
-}
+
+
 
 @keyframes opacityThingy{
   50%{opacity:0;}
